@@ -1,0 +1,41 @@
+@theme {
+  /* Brand */
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+
+  /* Surfaces */
+  --color-surface-950: #020617;
+  --color-surface-900: #0f172a;
+  --color-surface-800: #1e293b;
+  --color-surface-700: #334155;
+  --color-surface-600: #475569;
+  --color-surface-500: #64748b;
+  --color-surface-400: #94a3b8;
+  --color-surface-300: #cbd5e1;
+  --color-surface-200: #e2e8f0;
+  --color-surface-100: #f1f5f9;
+
+  /* Semantic */
+  --color-success-500: #10b981;
+  --color-warning-500: #f59e0b;
+  --color-error-500: #ef4444;
+  --color-paywall-500: #f59e0b;
+
+  /* Editorial accents */
+  --color-accent-gold: #d4a574;
+  --color-accent-parchment: #e8dcc8;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Plus Jakarta Sans", var(--font-sans);
+  --font-serif: "Literata", Georgia, serif;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+}

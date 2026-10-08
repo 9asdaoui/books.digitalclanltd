@@ -1,0 +1,7 @@
+# cPanel Apache reverse proxy - books subdomain to Docker on 127.0.0.1:8080
+<IfModule mod_proxy.c>
+    ProxyPreserveHost On
+    ProxyPass / http://127.0.0.1:8080/
+    ProxyPassReverse / http://127.0.0.1:8080/
+    RequestHeader set X-Forwarded-Proto "https" env=HTTPS
+</IfModule>

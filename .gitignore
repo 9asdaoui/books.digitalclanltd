@@ -1,0 +1,23 @@
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+storage/ebooks/*
+!storage/ebooks/.gitkeep
+
+# Local catalog files (not source)
+data/*.pdf
+data/*.epub
+data/*.jpg
+data/*.webp
+

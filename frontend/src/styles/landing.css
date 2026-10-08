@@ -1,0 +1,81 @@
+@layer utilities {
+  .landing-grain {
+    position: relative;
+  }
+
+  .landing-grain::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    z-index: 0;
+  }
+
+  .landing-grain > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .landing-hero-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+  }
+
+  .landing-rule {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-accent-gold), transparent);
+    opacity: 0.45;
+  }
+
+  .landing-rule-left {
+    height: 1px;
+    max-width: 4rem;
+    background: var(--color-accent-gold);
+    opacity: 0.7;
+  }
+
+  .landing-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent-gold);
+  }
+
+  .landing-stagger {
+    animation: landingFadeUp 0.7s ease-out both;
+  }
+
+  .landing-stagger-1 { animation-delay: 0.08s; }
+  .landing-stagger-2 { animation-delay: 0.16s; }
+  .landing-stagger-3 { animation-delay: 0.24s; }
+  .landing-stagger-4 { animation-delay: 0.32s; }
+
+  @keyframes landingFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .landing-cover-shadow {
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.25),
+      0 24px 48px rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(255, 255, 255, 0.04);
+  }
+
+  .landing-step-num {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--color-accent-gold);
+    opacity: 0.85;
+  }
+}

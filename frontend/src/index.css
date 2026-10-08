@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "./styles/globals.css";
+@import "./styles/effects.css";
+@import "./styles/landing.css";
+@import "./styles/splash.css";
+@import "./styles/reader.css";

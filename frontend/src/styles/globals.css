@@ -1,0 +1,66 @@
+@import "./theme.css";
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    color: var(--color-surface-100);
+    background-color: var(--color-surface-950);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .bg-app-gradient {
+    background: linear-gradient(135deg, #020617 0%, #0f172a 45%, #1e1b4b 100%);
+  }
+
+  .bg-reader {
+    background-color: var(--color-surface-900);
+  }
+
+  .glass-panel {
+    border-radius: var(--radius-2xl);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(24px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .glass-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(24px);
+  }
+
+  .text-display {
+    font-family: var(--font-display);
+  }
+
+  .text-reader {
+    font-family: var(--font-serif);
+  }
+
+  .label-brand {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-brand-400);
+  }
+}
